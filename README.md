@@ -1,7 +1,7 @@
 # Computing the nth digits of pi
 
 ## Description
-The procedure named pi, prodcues a infinite stream of pi digits.
+The procedure named pi, produces a infinite stream of pi digits.
 
 ## How to use
 ===>(display-n (pi) 6)
