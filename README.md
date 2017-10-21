@@ -4,7 +4,7 @@
 The procedure named pi, produces a infinite stream of pi digits.
 We have:
 <ul>
-<li> An input stream strm. This is just the stream f1, f2, f3, ... of linear fractional transforma- tions, each one represented as a matrix.
+<li> An input stream strm. This is just the stream f1, f2, f3, ... of linear fractional transformations, each one represented as a matrix.
   </li>
 <li>An intermediate data structure called a. a will itself be a linear fractional transformation.
   </li>
