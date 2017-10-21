@@ -21,6 +21,8 @@ Each step of the computation is a (recursive) call to the procedure action, whic
 
 ## How to use
 ```
+==>(load "pi.scm")
+()
 ==>(display-n (pi) 6)
 3 1 4 1 5 9 done
 ==>(display-n (pi) 100)
