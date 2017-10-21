@@ -2,7 +2,6 @@
 
 ## Description
 The procedure named pi, produces a infinite stream of pi digits.
-
 We have:
 <ul>
 <li> An input stream strm. This is just the stream f1, f2, f3, ... of linear fractional transforma- tions, each one represented as a matrix.
