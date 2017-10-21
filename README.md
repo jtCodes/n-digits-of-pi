@@ -15,11 +15,12 @@ We have:
 Each step of the computation is a (recursive) call to the procedure action, which in turn calls one of two procedures:
 <br>
 
-**consume**: Multiply a on the right by the first element of strm and make that the new a. Replace strm by the stream you get when you  remove its first element. (Of course, I really mean by this that you make a recursive call to action, passing new values of a and strm as defined here.)
+**consume**: Multiply a on the right by the first element of strm and make that the new a. Replace strm by the stream you get when you  remove its first element.
 <br>
 **produce**: Extract the next decimal digit of π from a (and incorporate that digit in the output stream), and multiply a on the left by a linear fractional transformation that reflects the fact that it has “lost that value”.
 
 ## How to use
+```
 ==>(display-n (pi) 6)
-<br>
 3 1 4 1 5 9 done
+```
