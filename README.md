@@ -1,4 +1,4 @@
-# Computing the nth digits of pi
+# Computing the n digits of pi
 
 ## Description
 The procedure named pi, produces a infinite stream of pi digits.
