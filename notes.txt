@@ -1,0 +1,292 @@
+1.1
++------------+------------+------------+------------+------------+------------+
+|            |Output Strm |     a      |     a-list |pow         |Input Strm  |
++------------+------------+------------+------------+------------+------------+
+|87+69>=100; |            |            |            |            |            |
+|c           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5)       |9038        |(9 0 3 8)   |1000        |(3 6 9 1 7) |
+|            |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|87+38<1000; |            |            |            |            |            |
+|p           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9)     |38          |(0 3 8)     |100         |(3 6 9 1 7) |
+|            |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|87+38>=100; |            |            |            |            |            |
+|c           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9)     |641         |(0 6 4 1)   |1000        |(6 9 1 7)   |
++------------+------------+------------+------------+------------+------------+
+|87+641<1000;|            |            |            |            |            |
+|p           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0)   |641         |(6 4 1)     |100         |(6 9 1 7)   |
++------------+------------+------------+------------+------------+------------+
+|87+41>=100; |            |            |            |            |            |
+|c           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0)   |6932        |(6 9 3 2)   |1000        |(9 1 7)     |
++------------+------------+------------+------------+------------+------------+
+|87+932>=    |            |            |            |            |            |
+|1000; c     |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0)   |70103       |(7 0 1 0 3) |10000       |(1 7)       |
++------------+------------+------------+------------+------------+------------+
+|87+103>=    |            |            |            |            |            |
+|10000; p    |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0 7) |103         |(0 1 0 3)   |1000        |(1 7)       |
++------------+------------+------------+------------+------------+------------+
+|87+103<1000;|            |            |            |            |            |
+|p           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0 7) |103         |(1 0 3)     |100         |(1 7)       |
++------------+------------+------------+------------+------------+------------+
+|87+3<100;   |            |            |            |            |            |
+|p           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0 7  |3           |(0 3)       |10          |(1 7)       |
+|            |1)          |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|87+3>=10;   |            |            |            |            |            |
+|c           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0 7  |117         |(0 1 1 7)   |1000        |(7)         |
+|            |1)          |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|87+117<1000;|            |            |            |            |            |
+|p           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0 7 1|117         |(1 1 7)     |100         |(7)         |
+|            |0)          |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|87+17>=100; |            |            |            |            |            |
+|c           |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|            |(8 5 9 0 7 1|1779        |(1 7 7 9)   |1000        |()          |
+|            |0)          |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+|return      |            |            |            |            |            |
+|finite strm |            |            |            |            |            |
+|consisting  |            |            |            |            |            |
+|of digits in|            |            |            |            |            |
+|a-list      |            |            |            |            |            |
+|            |            |            |            |            |            |
++------------+------------+------------+------------+------------+------------+
+     
+2.1
+(2+((1/3)(2)) = 2.66666...
+(2+((1/3)(3)) = 3
+(2+((1/3)(2+((2/5)(2))) = 2.933333...
+(2+((1/3)(2+((2/5)(3))) = 3.066666...
+(2+((1/3)(2+((2/5)(2+((3/7)(2)))) = 3.047619047...
+(2+((1/3)(2+((2/5)(2+((3/7)(3)))) = 3.1047619047...
+(2+((1/3)(2+((2/5)(2+((3/7)(2+((4/9)(2))))) = 3.098412698...
+(2+((1/3)(2+((2/5)(2+((3/7)(2+((4/9)(3))))) = 3.123809523...
+(2+((1/3)(2+((2/5)(2+((3/7)(2+((4/9)(2+((5/11)(2)))))) = 3.121500712...
+(2+((1/3)(2+((2/5)(2+((3/7)(2+((4/9)(2+((5/11)(3)))))) = 3.133044733...
+(2+((1/3)(2+((2/5)(2+((3/7)(2+((4/9)(2+((5/11)(2+((6/13)(2))))))) = 3.1321567..
+(2+((1/3)(2+((2/5)(2+((3/7)(2+((4/9)(2+((5/11)(2+((6/13)(3))))))) = 3.1374847..
+
+2.2
+f(x) = 0x+1 / (1x+3) => (0 1)
+       	   	    	(1 3)
+
+2.3
+Given:
+
+g(x) = (ax + b) /
+       (cx + d)
+       
+f(x) = (Ax + B) /
+       (Cx + D)
+
+f(g(x)) = (((a)(Ax + B) / (Cx + D)) + b) /
+	  (((c)(Ax + B) / (Cx + D)) + d)
+	  
+	= (((aAx + aB) / (Cx + D)) + b) /
+	  (((cAx + cB) / (Cx + D)) + d)
+	  
+	= (((aAx + aB) / (Cx + D)) + ((bCx + bD) / (Cx + D))) /
+	  (((cAx + cB) / (Cx + D)) + ((dCx + dD) / (Cx + D)))
+	  
+	= (aAx + aB + bCx + bD) /
+	  (Cx + D) /
+	  (cAx + cB + dCx + dD) /
+	  (Cx + D)
+
+	= (aAx + aB + bCx + bD) /
+	  (cAx + cB + dCx + dD)
+	  
+When multiplying two 2x2 matrices, you get:
+
+(a b) (A B) = (aA + bC aB + bD)      
+(c d) (C D)   (cA + dC cB + dD)
+
+and the result is basically:
+
+(aAx + bCx + aB + bD) /
+(cAx + dCx + cB + dD)
+
+Which is equal to the result of f(g(x))
+
+(aAx + aB + bCx + bD) /
+(cAx + cB + dCx + dD)
+
+since the order of addition don't matter. 
+
+----------------------------------------------------------------------------
+The Experience:
+
+Mult-Stream
+
+Looking back at my journal entries for this project, I can see that I actually
+did not struggle much on the actual programming part of this project. The
+hardest part of this project was trying to understand section 8 of the paper,
+Computing the Digits in Pi. There was no way around it. Many times I get tried
+to skim over some complicated looking part of paper and just go straight to
+coding, and every time, I just sit there not knowing what to write. For
+example, when I tried to translate this line of pseudo code:
+
+If ((a-list has at least 1 digit)
+
+into scheme before fully understanding the purpose of a-list, all I ended up
+doing was wondering about a-list. What is the point of a-list? Shouldn't having
+a be enough? How did a-list get to a point where it begins with 0? All those
+answers came to light as I work my way through Figure 18. Turns out, a-list is
+as important as a. Essentially, a-list is there to make it easy to add one
+digit at a time to the output stream since a-list is a list and a is not.
+Secondly, a-list is there to ensure that the algorithm is adding numbers at
+the right place. As digits get taken off a-list it reaches a point where it
+begins with 0:
+
+(9 0 3 8) => (0 3 8)
+
+the 0 at the beginning ensure that (0 3 8) is a three-digit number so that pow
+is calculated correctly.
+
+Having finish filling out the table from Figure 18, I have a pretty good idea
+of how the algorithm works and the purpose of each variable and how it's being
+changed. And so I went back to translating the pseudo code into scheme.
+Variable pow depends on the length of a-list so I just created a function that
+raise 10 to the length of a-list minus one because the 1 is part of the length
+of pow. Next come the produce and consume functions. Initially, I thought about
+creating those functions like this:
+
+(define (produce outstrm a a-list pow instrm)
+	(cons-stream outstrm (car a-list))
+	(modulo a pow)
+	(cdr a-list)
+	pow
+ 	instrm)
+
+and expected produce to spit back out the updated variable nicely one by one.
+But it is a big no. Everything in that produce function gets evaluated one by
+one, so only instrm is returned. I thought about returning all the updated
+values as one list but then I think about having to create selectors and
+stuff so I decided to just straight out call the function action only, without
+creating the functions produce and consume. Everything looks good so I test it
+out:
+
+==>(define test (mult-stream 87 (list->stream '(9 8 7 4 3))))
+
+and I got something like:
+
+((9 . #<promise>) .  #<promise>)
+
+That doesn't seem right,
+
+87 * 98743 = 8590641
+
+Where did the 9 come from? Turns out, it came from the base output I had:
+
+(cons-stream outstrm a-list)
+
+stream-cdring down (9 . #<promise>) reveals that I was building the stream in
+reverse.
+
+==> (car test)
+(9 . #<promise>)
+==>(stream-cdr (car test))
+(5 . #<promise>)
+==>(stream-cdr (stream-cdr (car test)))
+(8 . #<promise>)
+
+I was keeping track of the already calculated digit in the variable outstrm
+so I updated the outstrm like this
+
+(cons-stream (car a-list) outstrm)
+
+The problem with building up the stream through passing values through outstrm
+is that I am creating a queue like behavior. Essentially, what I was doing
+was:
+
+(cons-stream (cons-stream 9 (cons-stream 5 (cons-stream 8 '()))) '(6 4 1))
+
+The solution was not to build the stream though a variable but to build it
+through the body of action. Once the condition is met, the stream get its
+first element, and calling stream-cdr will wake up action to calculate the
+next item and so on. Coding wise, this was the most challenging problem I face.
+
+Digits of Pi
+
+When I first get to section 8.2 of the paper, I immediately skip past all the
+math stuffs and go straight to the algorithm part. Again that was pointless,
+because the algorithm description in section 8.2.2 of the paper was as clear
+as it gets, all it was needed was for me to understand what was going on.
+Basically, this part of the the assignment involves a lot of me trying to
+convince myself that the things mentioned in section 8.2 works.
+
+I had no idea what the purpose of the data structure a is. strm already
+contains linear fractional transformations, why is a another linear fractional
+transformation? What does it mean to multiply a on the left or on the right?
+All those became clear after I convinced myself that f of g is equal to the
+matrix AB. The purpose of a is to keep track of the nth computations of
+
+f1 o f1 o ... o fn(2)
+
+And when you want to incoporate fn+1 you multiply a on the right by fn+1,
+which is the first element of strm:
+
+a (fn+1)
+
+The order of multiplication really matters since matrix multiplcation is like
+function composition and f(g(x)) is not equal to g(f(x)).
+
+Having a better understand of the algorithm I went to coding. Things went much
+more smooth this time since I have a sense of what I needed to do. I know I
+need to create a matrix constructor and selectors because it's going to be
+reused a lot. Then I created other functions that simulate matrix operations.
+Then I went ahead convince myself that the algorithm works, so I created m1,
+m2,m3 and m4 that simulates the matrices in strm
+
+(define m1 (make-mat 1 6 0 3))                                                 
+(define m2 (add-m m1 (make-mat 1 4 0 2))                                        
+(define m3 (add-m m2 (make-mat 1 4 0 2))
+(define m4 (add-m m3 (make-mat 1 4 0 2))  
+
+And to get the a's
+
+(define a (compose m1 m2))                                                     
+(define a1 (compose a m3))                                                    
+(define a2 (compose a1 m4)) 
+
+Calling those variables yielded the same result as I had worked out by hand so
+I am convinced that part works. Next, I need to convince myself that that
+multiplying a on the left by
+
+(10 -10*n)
+(0     1 )
+
+really shift the digits. To do that I needed to see the actual digits being
+moved so I created a get-exact function to the exact numbers of any given
+lft.
+
+==>(get-exact (apply-inter a 3))
+3.066666666666667
+==>(get-exact (apply-inter (compose (ashift 3) a) 3))
+0.6666666666666666
+
+And it does shift the digits. 
